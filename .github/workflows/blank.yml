@@ -18,6 +18,8 @@ jobs:
         ruby -v
         docker version
         docker-compose -v
+    - name: docker compose check
+      run: docker-compose up
     - name: setup habitus
       run: |
         curl -sSL https://raw.githubusercontent.com/cloud66/habitus/master/habitus_install.sh | bash
