@@ -1,0 +1,7 @@
+version: '3'
+services:
+  version3.7:
+    build: .
+    dockerfile: Dockerfile
+    entrypoint:
+       - /bin/sh
