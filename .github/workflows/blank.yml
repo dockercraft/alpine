@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - master
+    - version/*
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Check Env
+      run: ruby -v
