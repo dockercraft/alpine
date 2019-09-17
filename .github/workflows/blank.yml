@@ -14,4 +14,6 @@ jobs:
       with:
         version: 2.6.x
     - name: check env
-      run: ruby -v
+      run: |
+        ruby -v
+        docker version
