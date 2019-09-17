@@ -4,3 +4,11 @@ services:
     build: ./alpine3.7/
     entrypoint:
        - /bin/sh
+  version3.8:
+    build: ./alpine3.8/
+    entrypoint:
+       - /bin/sh
+  version3.9:
+    build: ./alpine3.9/
+    entrypoint:
+       - /bin/sh
