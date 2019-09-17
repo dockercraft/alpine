@@ -1,6 +1,6 @@
 version: '3'
 services:
-  version3.7:
+  version3_7:
     build: .
     dockerfile: Dockerfile
     entrypoint:
