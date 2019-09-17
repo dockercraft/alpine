@@ -9,19 +9,12 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
-      with:
-        version: 2.6.x
     - name: check env
       run: |
-        ruby -v
         docker version
         docker-compose -v
     - name: docker compose check
-      run: docker-compose up
-    - name: setup habitus
       run: |
-        curl -sSL https://raw.githubusercontent.com/cloud66/habitus/master/habitus_install.sh | bash
-        chmod a+x /home/runner/.habitus/habitus
-        /home/runner/.habitus/habitus --help
+        docker images
+        docker-compose up -d
+        docker images

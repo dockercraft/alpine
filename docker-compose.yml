@@ -1,6 +1,6 @@
 version: '3'
 services:
   version3.7:
-    build: .
+    build: ./alpine3.7/
     entrypoint:
        - /bin/sh
