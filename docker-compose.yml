@@ -16,3 +16,7 @@ services:
     build: ./3.10/
     entrypoint:
        - /bin/sh
+  latest:
+    build: ./latest/
+    entrypoint:
+       - /bin/sh
