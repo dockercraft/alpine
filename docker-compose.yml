@@ -3,20 +3,25 @@ services:
   version3.7:
     build: ./3.7/
     entrypoint:
-       - /bin/sh
+       - /bin/cat
+    command: "/etc/os-release"
   version3.8:
     build: ./3.8/
     entrypoint:
-       - /bin/sh
+       - /bin/cat
+    command: "/etc/os-release"
   version3.9:
     build: ./3.9/
     entrypoint:
-       - /bin/sh
+       - /bin/cat
+    command: "/etc/os-release"
   version3.10:
     build: ./3.10/
     entrypoint:
-       - /bin/sh
+       - /bin/cat
+    command: "/etc/os-release"
   latest:
     build: ./latest/
     entrypoint:
-       - /bin/sh
+       - /bin/cat
+    command: "/etc/os-release"
