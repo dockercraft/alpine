@@ -5,4 +5,5 @@ MAINTAINER Daniel <daniel@topdevbox.com>
  # Local Build: docker build -t alpine .
 
 RUN apk update \
-	&& apk upgrade
+	&& apk upgrade \
+	&& rm -rf /var/cache/apk/*
