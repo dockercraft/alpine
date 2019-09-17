@@ -16,5 +16,5 @@ jobs:
     - name: docker compose check
       run: |
         docker images
-        docker-compose up -d
+        docker-compose up
         docker images
